@@ -1,0 +1,61 @@
+these are the templates for the page - don't forget to replace the filler names with the ones you've used!
+
+for a new button that opens tabs. goes inside <nav class="tabs">. 
+  <button class="tablink" onclick="openLink(event, 'TABNAME')">TAB TITLE</button>
+  
+  
+for a new tab (the thing that has the three columns)
+  <div id="TABNAME" class="command">
+        <div id="wrapper"><!-- you need this wrapper to content align into columns - make sure it doesn't get deleted -->
+
+          <!-- ✨ : the start of the filters  -->
+          <div class="filters">
+            <div class="ui-group">
+              <h3>Filter Name</h3>
+              <div class="button-group js-radio-button-group" data-filter-group="filter_one">
+                <button class="button is-checked" data-filter="">filter one</button>
+                <button class="button" data-filter=".first-filter">a filter</button>
+              </div><!-- end of data-filter group -->
+            </div><!-- end of .ui-group -->
+
+            <!-- ▲ put all filter buttons before here ▲ -->
+          </div><!-- end of the filters -->
+
+          <!-- ✨ : the start of the tag content  -->
+          <div class="tag-content">
+            <div class="content-box first-filter">
+              <h1><a href="#">Lorem, ipsum.</a></h1>
+              <h2>author - date</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div><!-- end of one content box -->
+
+            <!-- ▲ put all of the fic content above here ▲ -->
+          </div>
+
+          <!-- ✨ : the start of the authors -->
+          <div class="authors">
+            <a href="#" title="author"><img src="https://i.imgur.com/niN1stU.png" alt="author"></a>
+
+            <!-- ▲ put all of the author content above here ▲ -->
+          </div><!-- end of the .authors -->
+        </div><!-- end of the wrapper -->
+      </div><!-- end of one tab -->
+    
+for a new filtering group 
+  <div class="ui-group">
+    <h3>Filter Name</h3>
+    <div class="button-group js-radio-button-group" data-filter-group="size">
+      <button class="button is-checked" data-filter="">any</button>
+      <button class="button" data-filter=".filtername">a filter</button>
+    </div><!-- end of data-filter-group -->
+  </div>
+  
+for a new content box 
+  <div class="content-box filter">
+    <h1><a href="#">Lorem, ipsum.</a></h1>
+    <h2>author - date</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  </div><!-- end of one content box -->
+  
+for a new author profile 
+  <a href="#" title="author"><img src="https://i.imgur.com/niN1stU.png" alt="author"></a>
